@@ -94,7 +94,9 @@ function inserirCliente(string $nomecliente, string $cpfcliente, $conn, &$idClie
 
     if ($result) {
         echo MensagemPopUp("Cliente não encontrado e foi cadastrado automaticamente.");
-        $idCliente = pg_fetch_object($result);
+        $idCliente = pg_fetch_object($result); //Aqui eu pego o id do cliente que foi inserido e retorno para a função.
+        //esse id não é inserido na ordem de serviço pois inicialmente eu salvei na tabela o nome e o cpf do cliente,
+        // não deu tempo de corrigir essa estrutura.
     } else {
         echo MensagemPopUp("Cliente não encontrado. Houve um erro ao cadastrar cliente, tente novamente.");
         echo RedirecionarPara("ordemListar");
