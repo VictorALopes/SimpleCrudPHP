@@ -1,0 +1,27 @@
+Para o desenvolvimento do teste abaixo, não deverá ser utilizado nenhum Framework.
+Para o back-end deverá utilizar PHP, sendo Procedural ou Orientado a Objetos.
+Para o Front-end poderá utilizar HTML, JavaScript, Jquery e Bootsrap
+Banco de dados Postgres
+
+O teste se baseia no fluxo simples de abertura de Ordem de Serviço, onde, deverá ter as
+funcionalidades para Cadastros de Clientes, Produtos e a Ordem de Serviço em si.
+
+
+Clientes:
+1 - Criar CRUD de Clientes contendo os dados básico (Nome, CPF e Endereço)
+
+
+Produtos:
+1 - Criar CRUD de Produtos os dados básico (Código, Descrição, Status, Tempo Garantia)
+
+
+Ordem de Serviço:
+1 - Criar CRUD de Ordem de Serviço
+- A tela de cadastro deverá conter um formulário contendo pelo menos os seguintes campos:
+- Número Ordem
+- Data Abertura
+- Nome do Consumidor
+- CPF Consumidor
+- Produto (deverá deixar informar apenas os produtos já cadastrados)
+OBS: Se o cliente informado não existir o cadastro dele, deverá cadastrá-lo automaticamente e
+retornar o ID para gravar na tabela ordem
